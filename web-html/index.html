@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/icon/cake.png"/>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    
+    <!-- <style>
+        .image-menu{
+            background-image: url(img/banner.jpg);
+        }
+    </style> -->
+</head>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+        
+            <div class="heade">
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="logo-head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="index.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a></li>
+                        <li><a href="#" class="">Especialidades</a></li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+
+                <div class="head">
+                    <a href="especial_pasteles.html" class="ai"><i class="fa-solid fa-book"></i></a>
+                    
+                    <a href="#" class="ai" data-bs-toggle="offcanvas" data-bs-target="#intro"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                    
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide head-img" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption text-warning fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1>JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption text-danger fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1 class="text-black">JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner2.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption text-warning fs-4">
+                        <div><p>Bievenidos a</p></div> 
+                        <div><h1>JHON BETH</h1></div>
+                        <div><p>Un lugar para el capricho</p></div>
+                    </div>
+                    <img src="img/banner3.jpg" alt="New York" class="d-block w-100">
+                </div>
+                </div>
+            
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <!-- FIN DE HEADER IMAGEN Y BOTON -->
+        </header>
+        <!-------------------------------------------->
+        
+        <!-- BOTON FLOTANTE -->
+        <a href="https://wa.me/51979617922" class="btnflotante2">
+            <img class="" src="icon/whatsapp.png" alt="">
+        </a>
+        <!--  -->
+        <!-- BOTON FLOTANTE 2 -->
+        <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
+            <i class="bi bi-cart" id="carritoContenedor1">0</i>
+        </a>
+        <!--  -->
+        <!-- CARRITO LATERAL DERECHO -->
+        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
+
+            <div class="offcanvas-header" id="offcanvasRight">
+                <div class="offcanvas-title">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="offcanvas-body">
+                
+            </div>
+            <div class="offcanvas-footer">
+                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
+                    Continuar compra
+                </button><br>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+
+        <!-----------------SECTION-------------------->
+        <h2>Nosotros</h2>
+        <section class="seccion1 container-xxl d-flex mt-5 mb-5">
+            <div class="sec1">
+                <img class="w-50" src="img/imagen1.jpg" alt="">
+            </div>
+            <div class="sec2">
+                <!-- <div>
+                    <p></p> -->
+                    <p class="">Somos una nueva repostería 
+                        que le pone mucho talento 
+                        y dedicación a cada uno de sus dulces. 
+                        Todos nuestros productos son hechos a mano 
+                        y al día, no contienen conservantes químicos 
+                        ni mejoradores de masa lo que hace que sean 
+                        frescos y saludables.</p>
+                    <a href="nosotros.html"><button class="boton1">Mas información</button></a>
+                <!-- </div> -->
+            </div>
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Nuestras delicias</h2>
+        <section class="mb-5 seccion2 mt-5">
+
+            <div id="" class="container-xxl">
+
+                <div class="justify-content-center row row-cols-3 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 row-cols-xl-6" id="muestra">
+                
+                </div>
+                
+            </div>
+        </section>
+        <!-------------------------------------------->
+
+        <section class="mb-5 img-fluid" style="background-image: url(img/banner4.jpg); height: 400px; background-size: cover;">
+            <div>
+                <a href="tienda.html" class="mt-5 btn btn-secondary fs-5"><h3>Ir a la tienda</h3></a>
+                <h2 class="m-5">Se te antoja algo, pues que esperas vamos a la tienda<h2>
+            </div>
+            
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Especialidades</h2>
+        <section class="seccion3 container-xxl mt-5">        
+            <div class="bloc1">
+                <img src="past/pastel5.jpg" alt="">
+            
+                <div class="bloc2">
+                    <p>Es una de las artes de repostería 
+                        que emplea glaseados, coberturas, 
+                        merengue y otros elementos decorativos 
+                        comestibles para mejorar el aspecto de 
+                        las tartas.</p>
+                </div>
+            </div>
+            <div class="bloc3">  
+                <img src="img/tallado.jpg" alt="">
+            
+                <div class="bloc4">
+                    <p>Este arte de esculpir vegetales recibe 
+                        el nombre de Mukimono, y recuerda al 
+                        del ikebana (el famoso arte floral japonés) 
+                        ya que las verduras adoptan formas de flores.</p>
+                </div> 
+            </div> 
+        </section>
+        <!-------------------------------------------->
+
+        <h2>Ubicanos en</h2>
+        <section class="seccion4 container my-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62427.1278472351!2d-77.12477445602418!3d-12.064460253652113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c91c021a5ee5%3A0x70592dcc80745c0c!2sDon%20Cejis%20-%20REPOSTER%C3%8DA!5e0!3m2!1ses-419!2spe!4v1667334842029!5m2!1ses-419!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer> 
+
+    </main>
+    
+    <!-- <script src="js/carrusel.js"></script> -->
+    <script src="js/inicio.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+</body>
+</html>

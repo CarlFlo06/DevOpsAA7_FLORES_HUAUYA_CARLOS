@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  WEB:
+    image: nginx
+    ports:
+     - 9595:80
+    volumes:
+     - ./web-html:/usr/share/nginx/html
+  BD:
+    image: carlosflores06/tarea5:1.0
+    volumes:
+     - ./bd:/docker-entrypoint-initdb.d/
+

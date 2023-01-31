@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/icon/cake.png" />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+</head>
+<body>
+    <main>
+        <!------------------HEADER-------------------->
+        
+        <header class="mb-5">
+
+            <div class="heade">
+    
+                <!-- BARRA NAVEGACIÓN -->
+                <div class="logo-head">
+                    <a href="#" class="bg-black">
+                        <img class="icon" src="icon/cake.png" alt="">
+                        <span>Jhon Beth</span> 
+                    </a>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="">
+                        <li><a href="index.html" class="">Inicio</a></li>
+                        <li><a href="nosotros.html" class="">Nosotros</a></li>
+                        <li><a href="tienda.html" class="">Tienda</a></li>
+                        <li><a href="#" class="">Especialidades</a></li>
+                        <li><a href="contacto.html" class="">Contáctanos</a></li>
+                    </ul>    
+                </nav>
+    
+                <div class="head">
+                    <a href="#" class="ai"><i class="fa-solid fa-book"></i></a>
+                    <!-- <a href="carrito.html" class="ai"><i class="fa-solid fa-bag-shopping" id="carritoContenedor"></i></a> -->
+                    <!-- <button class="btn btn-success mx-3 mt-3" data-bs-toggle="offcanvas" data-bs-target="#intro" id="carritoContenedor">Presiona aqui</button> -->
+                    <a href="carrito.html" class="ai"><i class="bi bi-cart" id="carritoContenedor">0</i></a>
+                    
+                </div>
+                <!-- FIN DE BARRA DE NAVEGACIÓN -->
+                        
+                <div class="icon-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div>
+    
+            <div class="text-center text-white d-flex justify-content-center align-items-center bg-dark" id="imag">
+                
+                <h1 class="display-4 fw-bolder">Tienda</h1>
+            </div>
+            
+        </header>
+        <!-------------------------------------------->
+        
+        <!-- BOTON FLOTANTE -->
+        <a class="btnflotante2">
+            <img class="" src="icon/whatsapp.png" alt="">
+        </a>
+        <!--  -->
+        <!-- BOTON FLOTANTE 2 -->
+        <a class="btnflotante" data-bs-toggle="offcanvas" data-bs-target="#intro">
+            <i class="bi bi-cart" id="carritoContenedor1">0</i>
+        </a>
+        <!--  -->
+        <!-- CARRITO LATERAL DERECHO -->
+        <div class="offcanvas offcanvas-end" id="intro" data-bs-scroll="true">
+
+            <div class="offcanvas-header" id="offcanvasRight">
+                <div class="offcanvas-title">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="offcanvas-body">
+                
+            </div>
+            <div class="offcanvas-footer">
+                <button type="button" class="mb-3 btn btn-danger" id="vaciarCarrito">
+                    Vaciar carrito
+                </button>
+                <button type="button" id="procesarCompra" class="mb-3 btn btn-primary">
+                    Continuar compra
+                </button><br>
+                <span>Precio total:</span>
+                <p class="text-center" id="precioTotal"></p>
+            </div>
+        </div>
+        
+        <!-----------------SECTION-------------------->
+
+        <section class="container mt-5 mb-5" id="activarFuncion">
+            <h3 class="mb-5">Productos en el carrito de compras</h3>
+            <div id="carrito" class="form-group">
+                <table class="table table-responsive" id="lista-compra">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nombre del Producto</th>
+                            <th>Precio por unidad</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items">
+                        <!-- CONTENIDO CARRITO -->    
+                    </tbody>     
+                </table>
+
+                <!-- <div class="row justify-content-center d-none" id="spinner">
+                    <div class="spinner">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                    </div>
+                </div> -->
+    
+                <div class="d-flex justify-content-between">
+                    <div class="col-md-4 mb-4">
+                        <a href="tienda.html" class="boton1">Seguir comprando</a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <input id="vale" type="text" class="form-control" placeholder="Coloque su cupon de descuento">
+                        <button onclick="ingresarVale()" id="cupodes" type="button" class="boton1">Cupon de descuento</button>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                         <!-- <input type="submit" class="btn btn-success btn-block" id="button"> -->
+                         <a href="pago.html" class="boton1">Finalizar compra</a>
+                    </div>
+                </div>
+
+                <table class="">
+                    <tr>
+                    <!-- <th colspan="4" scope="col" class="text-right">TOTAL
+                        <p id="totalProceso"></p>
+                    </th> -->
+                    
+                    </tr>
+                </table>
+                <table class="table mt-5 table-responsive" style="border: 2px dashed black;">
+
+                    <thead>
+                        <th><h2>Subtotal</h2></th>
+                        <th><h2>Igv</h2></th>
+                        <th><h2>Total</h2></th>
+                    </thead>
+                    <tbody>
+
+                        <tr> 
+                            <td>
+                                <h3 id="totalProceso"></h3>
+                            </td>
+                            <td>
+                                <h3 id="igv"></h3>
+                            </td>
+                            <td>
+                                <h3 id="total"></h3>
+                            </td>
+                        </tr>
+          
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+        <!-------------------------------------------->
+
+        <section class="container-xl justify-content-center">
+
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col imgg1 d-flex">
+                    <i class="fa-sharp fa-solid fa-briefcase si"></i>
+                    <div class="">
+                        <h3 class="mb-4">Metodos de envio</h3>
+                        <p>Puedes elegir entre delivery o recojo en local: Jr. José Antonio 184, La Molina.</p>
+                    </div>     
+                </div>
+    
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-credit-card si"></i>
+                    <div>
+                        <h3 class="mb-4">Opciones de pago</h3>
+                        <p>Le ofrecemos varias formas de pagar por su compra.</p>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-thumbs-up si"></i>
+                    <div class="">
+                        <h3 class="mb-4">100% Satisfacción</h3>
+                        <p>Usted disfrutará de un producto de calidad.</p>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 d-flex">
+                    <i class="fa-regular fa-pen-to-square si"></i>
+                    <div class="">
+                        <h3 class="mb-4">Escribenos</h3>
+                        <p>Le responderemos lo más pronto posible.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-------------------FOOTER------------------->
+        
+        <footer class="text-white bg-dark p-4 pt-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="logo">
+                        <a href="#" class="">      
+                            <img class="icon" src="icon/cake.png" alt="">
+                            <span class="fs-4">Jhon Beth</span> 
+                        </a>
+                    </div> 
+                    <div>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </div>
+                </div>
+                
+                <div class="col imgg1 mb-5">
+                    <h4>Siguenos en:</h4>
+                    <img src="icon/facebook.png" alt="">
+                    <img src="icon/instagram.png" alt="">
+                    <img src="icon/twitter.png" alt="">
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Atendemos de:</h4>
+                    <p>Lunes a Sábado: 
+                    De 8:00 am a 8:00 pm</p>
+                </div>
+                <div class="col imgg1 mb-5">
+                    <h4>Comunicate con nosotros:</h4>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/whatsapp.png" alt="">998765432</li>
+
+                    </div>
+                    <div class="d-flex imgg1 align-items-center justify-content-center">
+
+                            <li><img class="me-3" src="icon/gmail.png" alt="">user@email.com</li>
+
+                    </div>
+                </div>
+            </div>
+            <P>Jhon Beth  | Todos los derechos reservados 2022. Diseñado por Carlos Flores Huauya</P>
+    
+        </footer>
+
+    </main>
+    <script src="js/tienda.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- <script src="js/compra.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
